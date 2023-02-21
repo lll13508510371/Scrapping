@@ -1,0 +1,176 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>太平洋网络通行证登录</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        <meta name="description" content="description" />
+        <meta name="keywords" content="keywords" />
+        <meta name="author" content="zhangyaru_gz liushuzhen_gz" />
+       	<meta content="always" name="referrer">
+        <link rel="stylesheet" href="//js.3conline.com/pcbabynew/pc/myLogin/myLogin.css"/>
+        <!--[if IE 6]><script>document.execCommand("BackgroundImageCache", false, true)</script><![endif]-->
+        <script>if(!window._addIvyID)document.write("<script src=//www.pconline.com.cn/_hux_/baby/sns/index.js><\/script>");</script> 
+		<!--栏目计数器 --> 
+		<span class="spanclass">
+		<script>document.write("<img src=//count.pcbaby.com.cn/count.php?channel=304&screen="+screen.width+"*"+screen.height+"&refer="+encodeURIComponent(document.referrer)+'&anticache='+new Date().getTime()+'&url='+encodeURIComponent(location.href)+" border=0 width=0 height=0>");</script>
+		</span>
+        <!-- 监控代码 -->
+        <script type="text/javascript">
+            -function(ch,chout,now,ck,chf){ now=1*now||1*new Date();
+                function run(s){try{s=s.data||s;if(s.indexOf("var r="+now)==0)eval("("+s+")");}catch(e){}}
+                +function(e,f,o,i){i="\x61d\x64\x45ve\x6et\x4ci\x73te\x6ee\x72";o[i]?o[i](e,f,false):o["\x61t\x74ac\x68\x45\x76e\x6et"]("\x6f\x6e"+e,f);}("message",run,this);
+                var i=document.createElement("div"); i.innerHTML="\x3cifra\x6de\x20i\x64="+now+"\x20\x73\x74y\x6ce=di\x73p\x6cay:\x6eo\x6ee\x20s\x72c=\x22\x2f\x2fcou\x6et\x36\x2epc\x6fn\x6cine\x2eco\x6d\x2ecn\x2fp\x63suv\x2e\x68tm\x22\x20\x6ea\x6de=\x22ifr:"+now+",ch:"+ch+(chout?",chout:"+chout:"")+(chf?",chf:"+chf:"")+(ck?",c\x6fo\x6bie:"+ck:"")+"\x22>\x3c\x2fi\x66ra\x6de\x3e";
+                (i=i.firstChild).onreadystatechange=function(){run(navigator[now],navigator[now]=this.undefined);};
+                document.getElementsByTagName("head")[0].appendChild(i);
+            }(-1,5050+517);
+        </script>
+    </head>
+    <body>
+        <script src="//jwz.3conline.com/adpuba/baby_default_show?id=pckids.txz.sy.test15.&media=js&channel=dynamic" charset="GBK"></script>
+        <!--头部begin-->
+        <div class="header">
+		    <div class="main clearfix">
+		        <a class="logo" target="_blank" href="//www.pcbaby.com.cn/"></a>
+		        <span class="subMark"><em class="b_icon"></em>太平洋网络通行证，畅游太平洋网络旗下所有网站</span>
+		    </div> 
+		</div>
+		<!-- 头部end -->
+		
+        <div class="wraper">
+            <!--这个位置是广告代码}-->
+            <div style="position:absolute;margin-top: 200px;">
+                <script src="//ivy.pconline.com.cn/adpuba/show?id=pckids.shouye.dlymxf.&media=js&channel=inline&trace=1"></script>
+            </div>
+            <div class="loginPic fl">
+                <script src="//ivy.pconline.com.cn/adpuba/show?id=pckids.txz.sy.sydt.&media=js&channel=inline&trace=1"></script>
+            </div>
+      		
+      		<!--登录内容-->
+      	<div class="loginBox fr">
+          <div class="loginTag">
+            <i class="s-cur">通行证登录</i>
+            <i>免注册登录</i>
+          </div>
+          <!--通行证登录-->
+          <div class="loginCon" style="display:block;">
+      		<input type="hidden" id="isCaptcha" value="0"/>
+        <form autocomplete="off" action="//passport3.pcbaby.com.cn/passport3/passport/login_ajax_do_new.jsp" method="post" name="loginform" id="loginform" class="clearfix">
+            	<input type="hidden" id="return" name="return" value="https://my.pcbaby.com.cn/user/adminIndex.jsp"/>
+            	<input type="hidden" id="bindUrl" name="bindUrl" value="https://my.pcbaby.com.cn/passport/bindMobile.jsp?return=https://my.pcbaby.com.cn/user/adminIndex.jsp"/>
+                <p id="checkTit" class="red checkTit"></p>
+                <div class="dName"><i class="userPic"></i>
+                 <input id="username" name="username" type="text" class="inp"
+                      maxLength="32" value="手机号/邮箱/用户名"
+                      onblur="usernameBlur(this);"
+                      onclick="usernameClick(this);"
+                      style="color: #878787;" />
+                 </div>
+                 <div class="dName"><i class="pwPic"></i>
+                 <input id="password" name="password" type="password" class="inp" maxLength="16" />
+                </div>
+                
+                 <div id="captchaTD" class="dName" style="display:none;">
+                     <div class="catcha-box">
+                         <div class="new-catcha">
+                             <img  id = "slideCaptchaImg" alt="" src="" >
+                             <img id = "slideCaptchaThumb" alt="" src="" style = "position: absolute;top:0px;left:0px;">
+                         </div>
+                         <div id="slider1" class="slider"></div>
+                     </div>
+				 </div>
+                
+                <div class="autoLog clearfix">
+                    <a class="fr red" href="//my.pcbaby.com.cn/passport/forgot_password.jsp" target="_blank">忘记密码?</a>
+                    <input type="checkbox" id="auto_login" value="30" checked="checked" name="auto_login" />下次自动登录
+                </div>
+                <!-- 新增 协议 20200109 s-->
+                <div class="agreement clearfix">
+                    <input class="checkbox" type="checkbox" name="checkbox" id="checkbox1">我已阅读并同意 <a class="blue" href="//my.pcbaby.com.cn/passport/terms.jsp" target="_blank">用户使用协议</a>和<a target="_blank" href="//corp.pcbaby.com.cn/privacyPolicy.html" class="blue">隐私政策</a>
+                </div>
+                <!-- 新增 协议 20200109 end-->
+                <input id="login" type="submit" value="登　录" />
+                
+        </form>
+        </div>
+         <!--免注册登录-->
+         <div class="loginCon">
+         	<input type="hidden" id="isPhoneCaptcha" value="-2"/>
+            <form autocomplete="off" action="//passport3.pcbaby.com.cn/passport3/passport/mobile_login.jsp" method="post" name="loginform2" id="loginform2" class="clearfix">
+                <input type="hidden" id="returnMobile" name="return" value="https://my.pcbaby.com.cn/user/adminIndex.jsp"/>
+                <div class="noRegBox">
+                  <div class="dName">
+                    <i class="u-ico-mobile"></i>
+                    <input type="text" class="inp" id="Jmobile" value="请输入手机号码" placeholder="请输入手机号码" maxlength="11" name="mobile" style="color: #999;"/>
+                  </div>
+                  <p class="u-error-tip" id="JmobileTip">请输入正确的手机号码</p>
+                  <div id="JyzmWrap">
+                      <div class="catcha-box">
+                          <div class="new-catcha">
+                              <img  id = "slideCaptchaImg2" alt="" src="" >
+                              <img id = "slideCaptchaThumb2" alt="" src="" style = "position: absolute;top:0px;left:0px;">
+                          </div>
+                          <div id="slider2" class="slider"></div>
+                      </div>
+                      <p class="u-error-tip" id="JimgYzmTip">请重新校验</p>
+                  </div>
+                  <div class="phoneYzm">
+                    <div class="dName">
+                      <i class="u-ico-phoneYzm"></i>
+                      <input type="text" class="inp" id="JtxtYzm" name="mobileVCode" maxlength="6"/>
+                    </div>
+                    <input type="button" value="获取验证码" disabled="true" class="u-btn-yzm" id="JbtnGetPhoneYzm" />
+                  </div>
+                  <p class="u-error-tip" id="JphoneYzmTip">短信验证码错误</p>
+                    <!-- 新增 协议 20200109 s-->
+                    <div class="agreement clearfix">
+                        <input class="checkbox" type="checkbox" name="checkbox" id="checkbox2">我已阅读并同意 <a class="blue" href="//my.pcbaby.com.cn/passport/terms.jsp" target="_blank">用户使用协议</a>和<a target="_blank" href="//corp.pcbaby.com.cn/privacyPolicy.html" class="blue">隐私政策</a>
+                    </div>
+                    <!-- 新增 协议 20200109 end-->
+                  <input id="login2" type="submit" value="登　录" />
+                </div>
+                </form>
+              </div>
+              <!-- 第三方登陆begin -->
+              <div class="otherLog">
+                <span class="fl">其它账号登录：</span>
+                <a class="tQQ" href="//my.pcbaby.com.cn/passport/opens/authorize.jsp?type=qzone_baby&return=https://my.pcbaby.com.cn/user/adminIndex.jsp">QQ登录</a>
+                <a class="tSina" href="//my.pcbaby.com.cn/passport/opens/authorize.jsp?type=sina_baby&return=https://my.pcbaby.com.cn/user/adminIndex.jsp">微博登录</a>
+              	<a class="tWeixin" href="//my.pcbaby.com.cn/passport/opens/authorize.jsp?type=weixin_baby&return=https://my.pcbaby.com.cn/user/adminIndex.jsp">微信登录</a>
+              </div>
+              <!-- 第三方登陆end -->
+              <a href="//my.pcbaby.com.cn/passport/mobileRegister.jsp" class="regNew" target="_blank">
+              注册新账号
+              </a>
+            </div>
+
+        </div>
+        <!-- 底部begin -->
+		<script src="//www.pcbaby.com.cn/global/footer/index.html" charset="GBK"></script>
+		<!-- 底部end -->
+		
+        <!--页面脚本区-->
+        <script src="//cdn.bootcss.com/jquery/1.7.1/jquery.min.js"></script>
+        <script src="//js.3conline.com/pcbaby/common/login/jquery.form.js" charset="UTF-8"></script>
+        <script src="//js.3conline.com/js/common/jQuery.windowName.plugin3.js" charset="UTF-8"></script>
+        <script src="//js.3conline.com/pcbaby/common/login/jquery.cookie.js" charset="UTF-8"></script>
+        <script>
+            var API_ROOT='//passport3.pcbaby.com.cn/passport3/api';
+            var vCodeKey='4f02e87753fdf9ce9be096abde4d2492';
+            var VCodeTime='1675431178452';
+            var SNS_ROOT = '//my.pcbaby.com.cn';
+            var PASSPORT_URL =  '//passport3.pcbaby.com.cn/passport3';
+            var tabIndex = '0';
+        </script>
+        <!-- new captcha -->
+        <script src="//captcha.pcbaby.com.cn/captcha/js/point_captcha.js" charset="utf-8"></script>
+        <script type="text/javascript" src="//captcha.pcbaby.com.cn/captcha/slidecaptcha_flush.jsp?load=true" charset="GBK"></script>
+        <link rel="stylesheet" href="//captcha.pcbaby.com.cn/captcha/css/jquery.slider.css" charset="UTF-8">
+        <script type="text/javascript" src="//captcha.pcbaby.com.cn/captcha/js/jsencrypt.min.js"></script>
+        <script type="text/javascript" src="//captcha.pcbaby.com.cn/captcha/js/jquery.slider.js"></script>
+        <script type="text/javascript" src="//js.3conline.com/pcbabynew/pc/myLogin/myLogin.js" charset="GBK"></script>
+        <script>_submitIvyID();</script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+"""
+    目标网址: https://fuliba2023.net/
+    
+    需求:
+        1、用scrapy采集数据173页所有数据
+        2、采集以下信息
+            title     # 文章标题
+            put_time # 发布时间
+            comments    # 评论数 --> 应该是阅读数吧
+            starts       # 点赞数
+            info    # 简介
+            
+        3. 写pipelines保存所有数据, 保存为csv格式的数据(需要用完整的pipelines去写)
+
+"""
